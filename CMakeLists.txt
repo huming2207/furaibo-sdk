@@ -10,4 +10,5 @@ set(CMAKE_EXECUTABLE_SUFFIX ".wasm")
 file(GLOB_RECURSE CORE_HDR src/*.h)
 file(GLOB_RECURSE CORE_SRC src/*.c)
 
-add_executable(client ${CORE_SRC} ${CORE_HDR})
+add_executable(furaibo ${CORE_SRC} ${CORE_HDR})
+target_include_directories(furaibo PUBLIC "src/furaibo")
